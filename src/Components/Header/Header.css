@@ -1,0 +1,17 @@
+.location img{
+    width: 20px;
+    height: 30px;
+}
+select{
+    padding-left: 10px;
+    height: 32px;
+    font-size: 18px;
+}
+.modalV .modal-dialog {
+    width: 100%;
+    float: right;
+    height: 100%;
+}
+.modalV .modal-content {
+    height: 100%;
+}
