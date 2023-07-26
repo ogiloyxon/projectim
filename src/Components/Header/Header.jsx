@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import location from '../../img/Location.svg';
 import logo from '../../img/Group 152.svg'
 import './Header.css'
-import {useInfoContext} from "../../Context";
+import { useInfoContext } from "../../Context";
 
 const btn = {
   backgroundColor: "#ff7010",
@@ -14,8 +14,8 @@ const text = {
 
 export default function Header() {
 
-  const {totalSumSelectedProducts} = useInfoContext()
-  const {setSelectedProducts} = useInfoContext()
+  const { totalSumSelectedProducts } = useInfoContext()
+  const { setSelectedProducts } = useInfoContext()
   const username = useRef();
   const useremail = useRef();
   const userpassword = useRef();
@@ -57,7 +57,7 @@ export default function Header() {
                       <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
-
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
                     </div>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export default function Header() {
                       <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
-                    <form action="#">
+                      <form action="#">
                         <label htmlFor="username" className="form-label">Username</label>
                         <input rel='username' type="text" className='form-control' placeholder='name' />
                         <label htmlFor="useremail" className="form-label">Email address</label>
@@ -78,7 +78,7 @@ export default function Header() {
                         <label htmlFor="userpassword" className="form-label">Password</label>
                         <input rel='userpassword' type="password" className='form-control' placeholder='password' />
                         <button className='btn btn-outline-primary me-5 mt-3' onClick={handleSubmit}>Sign in</button>
-                      <button className="btn btn-primary mt-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                        <button className="btn btn-primary mt-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
                       </form>
                     </div>
                   </div>
@@ -110,11 +110,11 @@ export default function Header() {
 
             <div className="col-md-3 text-end">
               <button
-                  type="button"
-                  style={btn}
-                  className="shopBtn btn btn-warning btn-lg text-white rounded-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                type="button"
+                style={btn}
+                className="shopBtn btn btn-warning btn-lg text-white rounded-1"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
               >
                 <i className='fa-solid fa-cart-shopping'></i> {totalSumSelectedProducts} ₽
               </button>

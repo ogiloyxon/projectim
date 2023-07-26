@@ -4,6 +4,7 @@ import Address from '../Address/Address';
 import Aksiya from '../InfoContent/Aksiya/Aksiya';
 import {ProductList} from "../ProductList";
 import {fakeProducts} from "../../Context";
+import Content from '../Readmore/Readmore';
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
           <h1 id='combo'>Комбо</h1>
             <ProductList products={fakeProducts.combo}/>
         </div>
+        <Content/>
         </div>
 
     </div>
