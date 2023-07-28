@@ -14,7 +14,7 @@ const text = {
 
 export default function Header() {
   const { totalSumSelectedProducts } = useInfoContext();
-  const { setSelectedProducts, selectedProducts } = useInfoContext();
+  const { selectedProducts } = useInfoContext();
   const username = useRef();
   const useremail = useRef();
   const userpassword = useRef();
